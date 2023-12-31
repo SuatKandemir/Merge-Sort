@@ -1,0 +1,64 @@
+Merge Sort
+
+[16,21,11,8,12,22] -> Merge Sort
+
+1) Yukarıdaki dizinin sort türüne göre aşamalarını yazınız. 
+2) Big-O gösterimini yazınız.
+
+Adım 1: Bölme (Divide)
+Diziyi iki eşit parçaya böleriz:
+
+Sol dizi: [16, 21, 11]
+Sağ dizi: [8, 12, 22]
+
+Adım 2: Böl ve Fethet (Recursively Divide)
+Her iki diziyi de aynı şekilde bölerek tek elemanlı alt dizilere ulaşana kadar devam ederiz. Her bölünme adımında, alt diziler sıralanır.
+
+Sol dizinin alt dizileri:
+
+[16]
+[21]
+[11]
+Sağ dizinin alt dizileri:
+
+[8]
+[12]
+[22]
+
+Adım 3: Birleştirme (Merge)
+Sıralı alt dizileri birleştirerek daha büyük sıralı diziler oluştururuz:
+
+Sol dizinin sıralı hali: [16, 21, 11]
+Sağ dizinin sıralı hali: [8, 12, 22]
+
+Adım 4: Ana Diziyi Birleştir (Merge Main Array)
+İki sıralı diziyi birleştirerek orijinal diziyi elde ederiz:
+
+Sonuç: [8, 11, 12, 16, 21, 22]
+
+Bu adımlar, Merge Sort algoritmasının her aşamasını temsil eder. Her iki alt dizi de sıralanmış olduğu için birleştirmek, sıralı bir dizi elde etmemizi sağlar.
+
+Merge Sort, her seviyede diziyi ikiye böldüğü ve ardından parçaları birleştirdiği "böl ve fethet" stratejisine dayanır. Dizinin boyutu 
+
+n olduğunda, her bölme işlemi logn seviyede gerçekleşir ve her seviyede n eleman birleştirilir.
+Bu nedenle, toplam zaman karmaşıklığı O(nlogn) olur. Bu, Merge Sort'un büyük veri setlerinde etkili bir şekilde çalışabilen bir sıralama algoritması olduğunu gösterir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
